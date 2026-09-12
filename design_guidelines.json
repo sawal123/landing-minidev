@@ -1,0 +1,45 @@
+{
+  "app_name": "MiniDev",
+  "app_type": "landing_page",
+  "theme": {
+    "mode": "dark",
+    "background": "#05070D",
+    "surface": "#0B1020",
+    "secondary_surface": "#111827",
+    "primary_blue": "#3B82F6",
+    "bright_blue": "#60A5FA",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "border_color": "rgba(59, 130, 246, 0.2)",
+    "glow_color": "rgba(59, 130, 246, 0.35)"
+  },
+  "typography": {
+    "font_family": "Plus Jakarta Sans, Inter, system-ui, sans-serif",
+    "h1_size": "text-4xl sm:text-5xl lg:text-6xl",
+    "h2_size": "text-2xl sm:text-3xl lg:text-4xl",
+    "body_size": "text-base sm:text-lg"
+  },
+  "images": {
+    "hero_mockup": "https://images.unsplash.com/photo-1771922748624-b205cf5d002d?q=85&w=1200&auto=format&fit=crop",
+    "code_preview": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=85&w=800&auto=format&fit=crop",
+    "abstract_tech": "https://images.unsplash.com/photo-1758073519996-6d3c63b4922c?q=85&w=1200&auto=format&fit=crop"
+  },
+  "sections": [
+    "Navbar",
+    "Hero",
+    "Introduction",
+    "Features Grid",
+    "Comparison (Why MiniDev)",
+    "Specifications",
+    "Documentation (Getting Started, Database, Runtime Storage Tree)",
+    "Beta Notice",
+    "Requirements",
+    "FAQ Accordion",
+    "Download CTA & Footer"
+  ],
+  "accessibility_and_testing": {
+    "data_testid_mandatory": true,
+    "aria_labels_required": true,
+    "keyboard_navigation": true
+  }
+}
