@@ -15,8 +15,10 @@ Build an official, production-quality static landing page for the MiniDev Window
 - Introduction, six feature cards, concept comparison, specifications, documentation, database guidance, runtime storage tree, beta notice, requirements, FAQ accordion, download CTA, and footer.
 - Accessibility-focused labels, ARIA state on menu/FAQ, focusable controls, and unique `data-testid` coverage.
 - SEO title, description, OpenGraph metadata, responsive desktop/tablet/mobile layouts.
+- Final Google Drive installer URL wired into every download CTA.
+- Added local SVG favicon/social preview asset, compact beta release notes, and three-step first-run runtime guide.
 
 ## Prioritized backlog
-- P0: Replace `GOOGLE_DRIVE_DOWNLOAD_URL` with the final Google Drive installer URL.
-- P1: Add a branded favicon and OpenGraph preview image when final brand assets are available.
-- P2: Add a short changelog section for future beta releases.
+- P0: Keep the final installer URL current as beta builds change.
+- P1: Replace the generated SVG social preview with final brand artwork if one becomes available.
+- P2: Expand the changelog when new beta versions ship.
