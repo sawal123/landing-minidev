@@ -19,6 +19,7 @@ Landing page resmi statis untuk aplikasi Windows "MiniDev" (Beta v0.1.0): dark p
 - 2026-09: Logo, screenshots, favicon, social-preview metadata.
 - 2026-09: Release notes & visual runtime guide.
 - 2026-09: E2E frontend test passed (iteration_1/3/4/5 reports).
+- 2026-09: Hapus paket internal @emergentbase/overlay & @emergentbase/visual-edits agar install Vercel anti gagal.
 
 ## Backlog
 - P0: Tidak ada.
