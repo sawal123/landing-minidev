@@ -1,25 +1,29 @@
-# MiniDev Landing Page PRD
+# PRD — MiniDev Landing Page
 
-## Original problem statement
-Build an official, production-quality static landing page for the MiniDev Windows beta desktop developer tool. The page must introduce the product, explain its scoped features/specifications/documentation, provide a configurable beta download CTA, and avoid backend, database, authentication, pricing, testimonials, GitHub/source-code references, or unsupported claims.
+## Problem Statement (original)
+Landing page resmi statis untuk aplikasi Windows "MiniDev" (Beta v0.1.0): dark premium theme, hero, product intro, features, why-compare, specs, documentation, runtime storage guide, beta notice, requirements, FAQ, download CTA (external Google Drive URL via config), SEO/OpenGraph. Tanpa backend, tanpa DB, tanpa auth, tanpa GitHub/repo mentions.
 
-## Architecture decisions
-- React single-page static landing page with reusable data-driven sections and no API calls.
-- Download destination is centralized in `frontend/src/config.js` as `DOWNLOAD_URL`.
-- Product SEO metadata is defined in `frontend/public/index.html` and reinforced at runtime.
-- Responsive CSS uses a dark navy/electric-blue visual system, CSS-only motion, and Lucide icons.
+## Architecture
+- Frontend-only SPA: React + custom CSS (Tailwind/craco build).
+- /app/frontend/src/App.js — seluruh section landing page.
+- /app/frontend/src/App.css — dark/glass theme styling.
+- /app/frontend/public/index.html — SEO, OpenGraph, favicon.
+- Backend & MongoDB: tidak digunakan (by design).
+
+## User Personas
+- Developer PHP/Laravel Windows yang ingin local dev environment ringan.
 
 ## Implemented
-- Sticky responsive navbar with mobile menu and anchor navigation.
-- Hero with beta badge, app mockup, download metadata, and two CTAs.
-- Introduction, six feature cards, concept comparison, specifications, documentation, database guidance, runtime storage tree, beta notice, requirements, FAQ accordion, download CTA, and footer.
-- Accessibility-focused labels, ARIA state on menu/FAQ, focusable controls, and unique `data-testid` coverage.
-- SEO title, description, OpenGraph metadata, responsive desktop/tablet/mobile layouts.
-- Final Google Drive installer URL wired into every download CTA.
-- Added local SVG favicon/social preview asset, compact beta release notes, and three-step first-run runtime guide.
-- Added the supplied MiniDev logo to navbar/footer and supplied dashboard/database screenshots to a responsive “Inside MiniDev” section with primary and mobile navigation.
+- 2026-09: Base landing page lengkap (Navbar sticky, Hero, Intro, Features, Why MiniDev, Specs, Docs, Runtime Storage, Beta Notice, Requirements, FAQ, Download, Footer).
+- 2026-09: DOWNLOAD_URL config → Google Drive link asli.
+- 2026-09: Logo, screenshots, favicon, social-preview metadata.
+- 2026-09: Release notes & visual runtime guide.
+- 2026-09: E2E frontend test passed (iteration_1/3/4/5 reports).
 
-## Prioritized backlog
-- P0: Keep the final installer URL current as beta builds change.
-- P1: Replace the generated SVG social preview with final brand artwork if one becomes available.
-- P2: Expand the changelog when new beta versions ship.
+## Backlog
+- P0: Tidak ada.
+- P1: Revisi copy/layout jika user memberi feedback.
+- P2: Refactor App.js ke komponen modular jika situs diperluas.
+
+## Next Tasks
+- Menunggu feedback user (GitHub push via tombol "Save to Github" di UI Emergent).
